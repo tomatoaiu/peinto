@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+  <meta charset = "utf-8">
+  <title>oekaki</title>
+  <link rel = "stylesheet" href = "peinto.css">
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
+  <script src = "peinto.js"></script>
+
+
+  <div id = "header">
+  <p>メニュー</p>
+  <p>
+      <select id = "penColor">
+        <option value = "#000">黒</option>
+        <option value = "#808080">灰</option>
+        <option value = "#f00">赤</option>
+        <option value = "#00f">青</option>
+        <option value = "#fff">白</option>
+        <option value = "#0f0">緑</option>
+        <option value = "#bed12d">黄緑</option>
+        <option value = "#ff0">黄</option>
+        <option value = "#f0f">マゼンタ</option>
+        <option value = "#0ff">水色</option>
+        <option value = "#ffa500">オレンジ</option>
+        <option value = "#800080">紫</option>
+        <option value = "#a52a2a">茶</option>
+        <option value = "#ffc0cb">ピンク</option>
+        <option value = "#fce2c4">肌色</option>
+        <option value = "#2d3c6e">紺色</option>
+      </select>
+      <select id = "penWidth">
+        <option value = "1">細</option>
+        <option value = "3">中</option>
+        <option value = "5">太</option>
+        <option value = "7">極太</option>
+        <option value = "15">ブラシ小</option>
+        <option value = "30">ブラシ大</option>
+      </select>
+      <select id = "pentoumei">
+        <option value = "1">不透明</option>
+        <option value = "0.75">小透明</option>
+        <option value = "0.5">半透明</option>
+        <option value = "0.25">半半透明</option>
+        <option value = "0">透明</option>
+      </select>
+      <input type = "button" id = "erase" value = "消去">
+      <input type = "button" id = "save" value = "ギャラリーに追加">
+      <select id = "text_p">
+        <option id = "text_!p">描く</option>
+        <option id = "text_p">書く</option>
+      </select>
+
+      <input type = "button" id = "size" value = "canvas size">
+
+      <select id = "linekata">
+        <option value = "butt">普通</option>
+        <option value = "round">丸</option>
+        <option value = "square">四角</option>
+      </select>
+
+      <select id = "lineori">
+        <option value = "round">丸</option>
+        <option value = "bevel">ちょん切り</option>
+        <option value = "miier">ザキザキ</option>
+      </select>
+      <input type = "button" id = "1" value = "canvas size">
+      <input type = "button" id = "s2" value = "canvas size">
+      <input type = "button" id = "3" value = "canvas size">
+      <input type = "button" id = "s4" value = "canvas size">
+      <input type = "button" id = "si5" value = "canvas size">
+      <input type = "button" id = "si6" value = "canvas size">
+
+  </p>
+
+  </div>
+  <div id = "wrapper">
+  <div id = "main">
+    <p>canvas</p>
+    <canvas width="600" height="400" id = "mycanvas">
+      Canvasに対応したブラウザを用意してください。
+    </canvas>
+  </div>
+  <div id = "gallery"></div>
+</div>
+
+</body>
+</html>

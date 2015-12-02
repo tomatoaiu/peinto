@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+  background-color: #ccc;
+  padding: 0px;
+  margin: 0px;
+}
+
+#header {
+  background-color: #a00;
+  width: 100%;
+  border-bottom: 10px;
+
+}
+
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+#main {
+  background-color: #0a0;
+  margin-right: 300px;
+  float: left;
+}
+
+#gallery {
+  background-color: #00a;
+  float: right;
+  width: 300px;
+}
+
+#mycanvas {
+  background-color: #fff;
+  border: 10px solid #999;
+  cursor: crosshair;
+}
+.thumbnail {
+  border: 2px solid #999;
+  margin-right: 5px;
+}
+
+#penColor {
+  border: 3px solid #999;
+}
+
+#penWidth {
+  border: 3px solid #999;
+}
+
+#pentoumei {
+  border: 3px solid #999;
+}
+
+#erase {
+  border: 3px solid #999;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#save {
+  border: 3px solid #999;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#text_p {
+  border: 3px solid #999;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#size {
+  border: 3px solid #999;
+  cursor: pointer;
+  background-color: #fff;
+  width : auto;
+}
+
+#linekata {
+  border: 3px solid #999;
+  background-color: #fff;
+}
+
+#lineori {
+  border: 3px solid #999;
+  background-color: #fff;
+}
