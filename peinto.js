@@ -9,13 +9,16 @@ $(function() {
       x,
       y,
       borderWidth = 10,
-      isDrawing = false;
+      isDrawing = false,
+      cStep = -1;
+
+  var cPushArray = new Array();
 
   $('#mycanvas').mousedown(function(e) {
     isDrawing = true;
     startX = e.pageX - $(this).offset().left - borderWidth;
     startY = e.pageY - $(this).offset().top - borderWidth;
-
+    undoImage = ctx.getImageData(0, 0,canvas.width,canvas.height);
   })
   .mousemove(function(e) {
     if(!isDrawing) return;
@@ -35,8 +38,8 @@ $(function() {
     isDrawing = false;
   });
 
-  $('#penColor').change(function() {
-    ctx.strokeStyle = $(this).val();
+  $('li').click(function() {
+    ctx.strokeStyle = $(this).css('background-color');
   });
 
   $('#penWidth').change(function() {
@@ -50,6 +53,17 @@ $(function() {
   $('#erase').click(function() {
     ctx.clearRect( 0, 0,canvas.width, canvas.height);
   });
+
+  $('#clear').click(function(e) {
+    if(!confirm('本当に消去しますか？')) return;
+      e.preventDefault();
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+  });
+
+  $('#undo').click(function(e) {
+    ctx.putImageData(undoImage,0,0);
+  });
+
 
   $('#save').click(function() {
     var img = $('<img>').attr({
