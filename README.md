@@ -1,7 +1,5 @@
 # ペイントソフト
 
-GoogleChrome推奨です。
+GoogleChrome推奨。
 
-参考にしたもの
-ドットインストール
-canvasでお絵えかきアプリ
+製作途中。
