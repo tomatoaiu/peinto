@@ -84,6 +84,12 @@ li {
   background-color: #fff;
 }
 
+#redo {
+  border: 3px solid #999;
+  cursor: pointer;
+  background-color: #fff;
+}
+
 #text_p {
   border: 3px solid #999;
   cursor: pointer;
