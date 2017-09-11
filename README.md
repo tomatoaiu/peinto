@@ -7,3 +7,5 @@ GoogleChrome推奨。
 # 参考にしたもの
  -ドットインストール
  -canvasでお絵えかきアプリ
+
+サイト:[ペイント](http://tomatoaiu.github.io/peinto/peinto.html "ペイント")
